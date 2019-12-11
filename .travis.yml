@@ -23,7 +23,6 @@ install:
 before_script:
   - ./tools/run_ganache_cli.sh </dev/null 1>/dev/null 2>&1 &
 script:
-  script:
   - npm run compile
   - npm run test
   - npm run test:integration

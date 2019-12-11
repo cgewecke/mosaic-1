@@ -69,14 +69,12 @@
     "ethlint": "1.2.4",
     "ganache-cli": "6.8.1-beta.0",
     "mocha": "6.2.0",
-    "npm-force-resolutions": "0.0.3",
     "openzeppelin-solidity": "2.1.1",
     "solium": "1.2.4",
     "ts-generator": "0.0.8",
     "typechain": "0.3.14",
     "typescript": "3.7.2",
-    "web3": "^1.2.4",
-    "web3-core-helpers": "^1.2.4"
+    "web3": "^1.2.4"
   },
   "dependencies": {}
 }
