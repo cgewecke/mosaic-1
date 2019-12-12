@@ -4,6 +4,7 @@
   "description": "Mosaic",
   "main": "index.js",
   "resolutions": {
+    "web3": "1.2.4",
     "@nomiclabs/**/web3": "1.2.4",
     "@nomiclabs/**/web3-bzz": "1.2.4",
     "@nomiclabs/**/web3-core-helpers": "1.2.4",
