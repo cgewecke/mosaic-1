@@ -23,7 +23,7 @@ install:
   - yarn list web3
   - yarn list web3-core
   - yarn list web3-utils
-  - yarn list web3-promievent
+  - yarn list web3-core-promievent
 before_script:
   - ./tools/run_ganache_cli.sh </dev/null 1>/dev/null 2>&1 &
   - sleep 10
