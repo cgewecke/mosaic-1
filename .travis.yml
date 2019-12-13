@@ -10,12 +10,6 @@ branches:
 git:
   quiet: true
   submodules: true
-notifications:
-  email:
-    recipients:
-      - ci.report@ost.com
-    on_success: always
-    on_failure: always
 node_js:
   - "8"
 before_install:
@@ -31,6 +25,5 @@ before_script:
 script:
   - npm run compile
   - npm run test
-  - npm run test:integration
 after_script:
   - kill $(ps aux | grep 'ganache-cli' | awk '{print $2}')
