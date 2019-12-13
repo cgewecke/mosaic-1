@@ -10,12 +10,6 @@ branches:
 git:
   quiet: true
   submodules: true
-notifications:
-  email:
-    recipients:
-      - ci.report@ost.com
-    on_success: always
-    on_failure: always
 node_js:
   - "8"
 before_install:
