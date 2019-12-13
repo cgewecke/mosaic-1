@@ -1,15 +1,25 @@
-# Consensus on computation
+# E2E test of Web3.js
 
-🚨 this is a research code base, not intended for production
+Uses buidler and yarn's "resolutions" feature to set the specific version of Web3
+used in Mosaic's truffle tests.
 
-Consensus on computation, is a research project that captures the fundamental problem for mosaic-consensus and for consensus on High-Performance Computation done off-chain.
+This toolset was chosen because it's the easiest way to swap an arbitrary
+version of Web3 into a large project. Truffle is complex and ships as a webpack bundle.
 
-Note: this repository is incomplete and not yet following the developer-guidelines while it is being built-out.
+Also makes it a more straightforward to distinguish between problems at Truffle vs problems at Web3.
 
-## Getting started
+Mosaic was chosen because their test suite:
++ does not use migrations
++ large-ish: almost 300 unit tests, takes ~10 min
++ experienced a non-deterministic "sudden disconnection" bug that Truffle developers attributed
+  to Web3.
+
+The real Mosaic project can be found [here](https://github.com/mosaicdao/mosaic-1)
+
+## Install
 
 ```bash
-git clone https://github.com/mosaicdao/mosaic-1 mosaic-1
+git clone https://github.com/cgewecke/mosaic-1 mosaic-1
 cd mosaic-1
 npm run update
 ```
