@@ -10,12 +10,6 @@ branches:
 git:
   quiet: true
   submodules: true
-notifications:
-  email:
-    recipients:
-      - ci.report@ost.com
-    on_success: always
-    on_failure: always
 node_js:
   - "8"
 before_install:
@@ -26,11 +20,15 @@ before_install:
   - sudo add-apt-repository -y ppa:ethereum/ethereum
 install:
   - npm run update
+  - yarn list web3
+  - yarn list web3-core
+  - yarn list web3-utils
+  - yarn list web3-core-promievent
 before_script:
   - ./tools/run_ganache_cli.sh </dev/null 1>/dev/null 2>&1 &
+  - sleep 10
 script:
   - npm run compile
   - npm run test
-  - npm run test:integration
 after_script:
   - kill $(ps aux | grep 'ganache-cli' | awk '{print $2}')
