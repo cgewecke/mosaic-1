@@ -4,7 +4,6 @@
   "description": "Mosaic",
   "main": "index.js",
   "resolutions": {
-    "web3": "1.2.4",
     "@nomiclabs/**/web3": "1.2.4",
     "@nomiclabs/**/web3-bzz": "1.2.4",
     "@nomiclabs/**/web3-core-helpers": "1.2.4",
@@ -74,7 +73,6 @@
     "solium": "1.2.4",
     "ts-generator": "0.0.8",
     "typechain": "0.3.14",
-    "typescript": "3.7.2",
-    "web3": "^1.2.4"
+    "typescript": "3.7.2"
   }
 }
