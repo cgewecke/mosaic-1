@@ -55,9 +55,9 @@
   },
   "homepage": "https://github.com/mosaicdao/mosaic-1#readme",
   "devDependencies": {
-    "@nomiclabs/buidler": "^1.0.1",
-    "@nomiclabs/buidler-truffle5": "^1.0.1",
-    "@nomiclabs/buidler-web3": "^1.0.1",
+    "@nomiclabs/buidler": "1.0.1",
+    "@nomiclabs/buidler-truffle5": "1.0.1",
+    "@nomiclabs/buidler-web3": "1.0.1",
     "@types/mocha": "5.2.7",
     "assert": "2.0.0",
     "bn.js": "5.0.0",
