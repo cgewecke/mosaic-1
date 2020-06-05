@@ -59,7 +59,10 @@ contract('Consensus::setup', (accounts) => {
       const params = Object.assign(
         {},
         setupParams,
-        { minValidators: new BN(4) },
+        {
+          committeeSize: new BN(10),
+          minValidators: new BN(4)
+        },
       );
       await Utils.expectRevert(
         ConsensusUtils.setup(consensus, params),
